@@ -34,4 +34,15 @@ class FizzBuzzTest extends PHPUnit\Framework\TestCase
         $fizz = new FizzBuzz(3);
         $this->assertEquals('Fizz', $fizz->play());
     }
+
+    /**
+     * Check if "Buzz" is returned when a multiple of five is passed in parameter.
+     */
+    public function testBuzz()
+    {
+        $fizz = new FizzBuzz(5);
+        $this->assertEquals('Buzz', $fizz->play());
+    }
+
+
 }
