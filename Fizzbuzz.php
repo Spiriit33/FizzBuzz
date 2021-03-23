@@ -41,7 +41,7 @@ final class FizzBuzz
      */
     #[Pure] public function isEqualToZero(): bool
     {
-        return $this->number === 0;
+        return is_null($this->number);
     }
 
     /**
