@@ -32,7 +32,7 @@ class FizzBuzzTest extends PHPUnit\Framework\TestCase
     public function testFizz()
     {
         $fizz = new FizzBuzz(3);
-        $this->assertEquals('Fizz', $fizz->play());
+        $this->assertSame('Fizz', $fizz->play());
     }
 
     /**
@@ -41,7 +41,7 @@ class FizzBuzzTest extends PHPUnit\Framework\TestCase
     public function testBuzz()
     {
         $fizz = new FizzBuzz(5);
-        $this->assertEquals('Buzz', $fizz->play());
+        $this->assertSame('Buzz', $fizz->play());
     }
 
     /**
@@ -50,7 +50,7 @@ class FizzBuzzTest extends PHPUnit\Framework\TestCase
     public function testFizzBuzz()
     {
         $fizz = new FizzBuzz(15);
-        $this->assertEquals('FizzBuzz', $fizz->play());
+        $this->assertSame('FizzBuzz', $fizz->play());
     }
 
     /**
