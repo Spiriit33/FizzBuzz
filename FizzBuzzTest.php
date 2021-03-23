@@ -52,4 +52,13 @@ class FizzBuzzTest extends PHPUnit\Framework\TestCase
         $fizz = new FizzBuzz(15);
         $this->assertEquals('FizzBuzz', $fizz->play());
     }
+
+    /**
+     * Check if the base number is returned when it is not a multiple of three or five.
+     */
+    public function testReturnInt()
+    {
+        $fizz = new FizzBuzz(2);
+        $this->assertEquals($fizz->getNumber(), $fizz->play());
+    }
 }
