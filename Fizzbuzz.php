@@ -1,7 +1,4 @@
 <?php
-
-use JetBrains\PhpStorm\Pure;
-
 final class FizzBuzz
 {
     /**
@@ -39,7 +36,7 @@ final class FizzBuzz
      * Check if the current number is equal to 0.
      * @return bool
      */
-    #[Pure] public function isEqualToZero(): bool
+    public function isEqualToZero(): bool
     {
         return is_null($this->number);
     }
@@ -66,7 +63,7 @@ final class FizzBuzz
      * Check if the number is negative or equal to zero.
      * @return bool
      */
-    #[Pure] public function isInvalid(): bool
+     public function isInvalid(): bool
     {
         return $this->isEqualToZero() || $this->isNegative();
     }
@@ -74,7 +71,7 @@ final class FizzBuzz
     /**
      * Check if the current number is multiple of three and five.
      */
-    #[Pure] public function isFizzBuzz(): bool
+       public function isFizzBuzz(): bool
     {
         return $this->isMultipleOfThree() && $this->isMultipleOfFive();
     }
